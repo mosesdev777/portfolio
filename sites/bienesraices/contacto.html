@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link rel="stylesheet" href="./public/css/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="index.html">
+                    <img src="./public/img/logo.svg" alt="logo">
+                </a>
+                <nav class="navegacion">
+                    <a href="index.html">inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="#">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="login.html">Iniciar Sesion</a>>
+                </nav>
+            </div>
+        </div>
+    </header>
+   
+   <main class="contenedor seccion">
+        <h1>Contacta con nosotros</h1>
+        <img src="./public/img/destacada3.jpg" alt="Imagen Contacto">
+        <h2>Llene el formulario de Contacto</h2>
+        <form action="" class="formulario">
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                <div>
+                    <label for="">Nombre:</label>
+                    <input type="text" name="name" id="name" placeholder="Tu Nombre" class="field">
+                </div>
+                <div>
+                    <label for="">E-Mail:</label>
+                    <input type="mail" name="mail" id="mail" placeholder="Tu Correo Electronico" class="field">
+                </div>
+                <div>
+                    <label for="">Telefono:</label>
+                    <input type="text" name="phone" id="phone" placeholder="Tu Telefono"
+                    class="field">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                   <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="field"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informacion Propiedad</legend>
+                <div>
+                    <label for="">Vende o Compra:</label>
+                    <select name="tipo" id="tipo" class="field">
+                        <option value="" selected disabled>Seleccione</option>
+                        <option value="">Vender</option>
+                        <option value="">Comprar</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Cantidad:</label>
+                    <input type="number" name="cantidad" id="cantidad" min="1" class="field">
+                </div>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>Como desea ser contactado</p>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="radio">
+                    <label for="mail">E-mail</label>
+                    <input type="radio">
+                </div>
+                <p>Si eligio telefono, elija la fecha y la hora</p>
+                <div>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha" class="field">
+                </div>
+                <div>
+                    <label for="hora">Hora</label>
+                    <input type="time" name="hora" id="hora" class="field">
+                </div>
+            </fieldset>
+            <input type="submit" value="Enviar" class="boton-verde boton">
+        </form>
+    </main>
+    
+<footer class="footer seccion">
+    <div class="contenedor contenido-footer">
+        <nav class="navegacion">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="#">Anuncios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contactanos</a>
+        </nav>
+    </div>
+    <p class="copyright">Todos los Derechos Reservados 2023 &copy;</p>
+</footer>
+
+<script src="js/bundle.min.js"></script>
+</body>
+</html>
+
+

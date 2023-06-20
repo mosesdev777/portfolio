@@ -1,0 +1,329 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: inherits;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 95%;
+}
+
+body {
+  font-size: 16px;
+}
+body .fixed-body {
+  overflow: hidden;
+}
+
+p {
+  font-size: 2rem;
+  color: #000000;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.header {
+  background-color: #4cb8b3;
+  padding: 2rem;
+}
+.header h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+@media (min-width: 756px) {
+  .header .header-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header h1 {
+    margin-bottom: 0rem;
+  }
+}
+
+.main-navigation a {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
+}
+.main-navigation a:hover {
+  color: #fef46d;
+}
+@media (min-width: 768px) {
+  .main-navigation {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+.video {
+  position: relative;
+  max-height: 70rem;
+  min-height: 50re;
+  overflow: hidden;
+}
+.video .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(270deg, rgba(67, 8, 217, 0.3) 0%, rgba(238, 12, 214, 0.3) 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+video {
+  display: block;
+  width: 100%;
+}
+
+.video-content h2, .video-content p {
+  color: #ffffff;
+}
+.video-content h2 {
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+@media (max-width: 480px) {
+  .video-content h2 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+.video-content p {
+  background-color: #f53756;
+  display: inline-block;
+  font-weight: bolder;
+  padding: 1rem 2rem;
+}
+
+.about-festival {
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  .about-festival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info h2 {
+  margin-bottom: 2rem;
+}
+@media (max-width: 480px) {
+  .info {
+    margin-top: 2rem;
+  }
+}
+.info .info__date {
+  color: #f53756;
+  font-weight: bold;
+}
+
+.lineup {
+  background-color: #f53756;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+.lineup .lineup__heading, .lineup .lineup__date {
+  color: #ffffff;
+  text-align: center;
+}
+.lineup h3 {
+  margin-top: 2rem;
+}
+.lineup .lineup__date {
+  padding: 3rem 0;
+}
+.lineup img {
+  width: 150px;
+}
+.lineup .img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-yellow {
+  background-color: #fef46d;
+}
+.bg-yellow .calendar li:nth-child(odd) {
+  background-color: #fdec08;
+}
+
+.bg-green {
+  background-color: #4cb8b3;
+}
+.bg-green .calendar li:nth-child(odd) {
+  background-color: #3b9691;
+}
+
+.scenarios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.scenario p {
+  text-align: center;
+}
+.scenario li {
+  padding: 2rem 0;
+}
+
+.calendar li {
+  font-weight: bold;
+}
+.calendar span {
+  font-weight: normal;
+}
+
+.galery {
+  padding: 5rem 0;
+}
+.galery h3 {
+  text-align: center;
+}
+.galery ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.galery img {
+  width: 200px;
+  height: 200;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay picture {
+  display: block;
+  max-width: 100rem;
+}
+.overlay .modal__close {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  margin-top: 0;
+  font-weight: bold;
+}
+.overlay .modal__close:hover {
+  cursor: pointer;
+}
+
+.tickets {
+  text-align: center;
+  padding-top: 2rem;
+}
+.tickets h3 {
+  color: #ffffff;
+}
+
+.header-pass {
+  background-color: #f53756;
+  text-align: center;
+}
+.header-pass p {
+  color: #ffffff;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+.pass p {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+.body-pass {
+  background-color: #ffffff;
+}
+.body-pass li {
+  padding: 1rem 0;
+  border: solid 1px #e1e1e1;
+}
+
+.tickets-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.footer-header {
+  background-color: #752f97;
+  text-align: center;
+}
+.footer-header p {
+  color: #ffffff;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #f53756;
+  padding: 1rem 0;
+}
+.footer p {
+  text-align: center;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,40 @@
+:root{
+    /*Aqui van las variables de colores, fuetnes, etc*/
+}
+
+
+
+html {
+    font-size: 62.5%;
+}    
+    
+*,*::before, *:after{
+    box-sizing: border-box;
+}
+
+    
+
+body {
+    font-size: 16px;
+    box-sizing: border-box;
+  
+}
+
+
+
+
+footer{
+    text-align: center;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+a{
+    text-decoration: none;
+}
+

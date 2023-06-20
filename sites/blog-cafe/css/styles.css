@@ -1,0 +1,293 @@
+:root {
+    /*Aqui van las variables de colores, fuetnes, etc*/
+    --white: #fff;
+    --coffee: #a64942;  
+    --black:#000;  
+    --gris: #d6c8c8; 
+
+
+    --sec-font: 'Open Sans', sans-serif;
+    --pri-font: 'PT Sans', sans-serif;
+}
+
+/*General CSS*/
+
+*,*::before, *:after{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--sec-font);
+    line-height: 2;
+
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+h1, h2, h3, h4{
+    font-family: var(--pri-font);
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.4rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*utilities*/
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+/*Header*/
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header h1, h3{
+    color: var(--white);
+    text-align: center;
+}
+
+.header p{
+    color: var(--white);
+    text-align: center;
+}
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    font-weight: normal;
+}
+
+.logo__bold{
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .logo, .logo__bold{
+        font-size: 3rem;
+    }
+}
+
+.link__navigation{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+@media (min-width: 768px) {
+    .navbar {
+            display: flex;
+            gap: 3rem;
+        }
+}
+/*Blog*/
+
+.sidebar h3, .blog h3{
+    color: var(--black);
+
+}
+
+
+@media (min-width: 768px) { 
+    .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            column-gap: 4rem;
+    
+        }
+}
+
+div h4,p, a{
+    color: var(--black);
+    text-align: left;;
+}
+
+
+.entry{
+    border-bottom: 1px solid var(--coffee);
+    margin-bottom: 2rem;;
+
+}
+
+.entry:last-of-type{
+    border: none;
+}
+
+.entry img{
+    max-width: 100%;
+    height: auto;
+}
+
+.button{
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    background-color: var(--coffee);
+
+}
+
+@media (min-width: 768px) {
+    .button{
+        display: inline-block
+    }
+}
+
+.courses{
+    list-style: none;;
+}
+
+.widget-course{
+    border-bottom: 1px solid var(--coffee);
+    margin-bottom: 2rem;
+}
+
+.widget-course:last-of-type {
+    border-bottom: none
+}
+.widget-course__label{
+    font-weight: bold;
+}
+
+.widget-course__info{
+    font-weight: normal
+}
+
+
+.footer{
+    background-color: var(--black);
+    padding: 4rem;
+    margin-top: 4rem;
+}
+
+.bar a{
+    color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .about__info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;;
+    }
+}
+.about img{
+    width: 100%;
+}
+
+.about h3{
+    color: var(--black);
+}
+
+@media (min-width: 768px) {
+    .course {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        border-bottom: solid 1px var(--coffee);
+        margin-bottom: 2rem;
+    
+        }
+}
+
+.course img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.course:last-of-type{
+    border: none;
+}
+
+
+.contact__bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form{
+   margin: -5rem auto 0 auto;
+   width: 90%;
+   background-color: var(--white);
+   padding: 5rem;
+  
+}
+
+.field{
+   display: flex;
+   margin-bottom: 2rem;
+}
+.field__label{
+    flex: 0 0 9rem;
+
+}
+
+.field__input{
+    flex: 1;
+}    
+
+.field__text-area{
+    height: 20rem;
+
+}
